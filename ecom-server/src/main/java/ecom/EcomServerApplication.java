@@ -40,6 +40,7 @@ public class EcomServerApplication implements CommandLineRunner {
                 product.setAvailable(random.nextBoolean());
                 product.setPromotion(random.nextBoolean());
                 product.setSelected(random.nextBoolean());
+                product.setPhotoName("unknown.png");
                 product.setCategory(c);
 
                 productRepository.save(product);
